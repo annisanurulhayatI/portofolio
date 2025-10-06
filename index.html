@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annisa Nurul Hayati - Portofolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            box-sizing: border-box;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .progress-bar {
+            animation: fillBar 2s ease-in-out;
+        }
+
+        @keyframes fillBar {
+            from {
+                width: 0%;
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 0.8s ease forwards;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .nav-link {
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: #667eea;
+        }
+
+        .section-padding {
+            padding: 80px 0;
+        }
+
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 50px;
+            color: white;
+            margin: 0 auto;
+        }
+
+        .skill-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .project-image,
+        .certificate-image {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(45deg, #f093fb, #f5576c);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+
+<body class="font-sans">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white shadow-lg z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-xl font-bold text-gray-800">Annisa Nurul Hayati</div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#home" class="nav-link text-gray-600">Beranda</a>
+                    <a href="#about" class="nav-link text-gray-600">About Me</a>
+                    <a href="#education" class="nav-link text-gray-600">Pendidikan</a>
+                    <a href="#skills" class="nav-link text-gray-600">Keahlian</a>
+                    <a href="#projects" class="nav-link text-gray-600">Karya</a>
+                    <a href="#certificates" class="nav-link text-gray-600">Sertifikat</a>
+                    <a href="#contact" class="nav-link text-gray-600">Kontak</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden">
+                    <i class="fas fa-bars text-gray-600"></i>
+                </button>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-2">
+                <a href="#home" class="block py-2 text-gray-600">Beranda</a>
+                <a href="#about" class="block py-2 text-gray-600">About Me</a>
+                <a href="#education" class="block py-2 text-gray-600">Pendidikan</a>
+                <a href="#skills" class="block py-2 text-gray-600">Keahlian</a>
+                <a href="#projects" class="block py-2 text-gray-600">Karya</a>
+                <a href="#certificates" class="block py-2 text-gray-600">Sertifikat</a>
+                <a href="#contact" class="block py-2 text-gray-600">Kontak</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="gradient-bg min-h-screen flex items-center">
+        <div class="container mx-auto px-6 text-center text-white">
+            <div class="fade-in">
+                <h1 class="text-5xl md:text-6xl font-script mb-4">PORTOFOLIO</h1>
+                    <div class="profile-image mb-8">
+                        <img src="Image\cropped_circle_image.png">
+                    </div>
+                    <h1 class="text-5xl md:text-6xl font-bold mb-4">Annisa Nurul Hayati</h1>
+                    <p class="text-xl md:text-2xl mb-6">Mahasiswa Baru Jurusan Matematika Prodi Ilmu Komputer</p>
+                    <p class="text-lg mb-8">Universitas Negeri Medan</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">🙋‍♀️ About Me</h2>
+                <div class="w-20 h-1 bg-purple-500 mx-auto"></div>
+            </div>
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white rounded-lg shadow-lg p-8 card-hover">
+                    <div class="grid md:grid-cols-2 gap-8 items-center">
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4">Halo! Saya Annisa</h3>
+                            <p class="text-gray-600 mb-4">
+                                Saya adalah mahasiswa baru Universitas Negeri Medan Prodi Ilmu Komputer 2025. Saya sudah mengenal 
+                                komputer sejak SD, saya paling sering menggunakan komputer kala itu untuk menggambar yang 
+                                merupakan hobi saya, namun saya masih belum mengenal baik dengan coding hingga kini.
+                                Saya sangat antusias untuk memulai perjalanan akademik saya di bidang teknologi dan
+                                komputer.
+                            </p>
+                            <div class="space-y-3">
+                                <div class="flex items-center">
+                                    <i class="fas fa-calendar text-blue-500 mr-3"></i>
+                                    <span><strong>Tempat/Tanggal Lahir:</strong> Binjai, 07 Maret 2008</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fas fa-palette text-purple-500 mr-3"></i>
+                                    <span><strong>Hobi & Minat:</strong> Menggambar & Mendesain</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fas fa-heart text-red-500 mr-3"></i>
+                                    <span><strong>Karakter:</strong> Baik, Sopan, Empati</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-gradient-to-r from-purple-400 to-pink-400 rounded-lg p-6 text-white">
+                            <h4 class="text-xl font-bold mb-3">🎯 Tujuan Saya</h4>
+                            <p>Terus berusaha mengasah kemampuan analisis serta kreativitas saya untuk menjadi
+                                profesional yang kompeten di bidang teknologi.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section-padding bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">🎓 Riwayat Pendidikan</h2>
+                <div class="w-20 h-1 bg-purple-500 mx-auto"></div>
+            </div>
+            <div class="max-w-2xl mx-auto">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="overflow-x-auto">
+                        <table class="w-full">
+                            <thead class="gradient-bg text-white">
+                                <tr>
+                                    <th class="px-6 py-4 text-left">Sekolah</th>
+                                    <th class="px-6 py-4 text-center">Tahun Masuk</th>
+                                    <th class="px-6 py-4 text-center">Tahun Lulus</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-b hover:bg-gray-50">
+                                    <td class="px-6 py-4 font-semibold">SDN 027688 Binjai</td>
+                                    <td class="px-6 py-4 text-center">2012</td>
+                                    <td class="px-6 py-4 text-center">2018</td>
+                                </tr>
+                                <tr class="border-b hover:bg-gray-50">
+                                    <td class="px-6 py-4 font-semibold">SMPN 2 Binjai</td>
+                                    <td class="px-6 py-4 text-center">2018</td>
+                                    <td class="px-6 py-4 text-center">2021</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="px-6 py-4 font-semibold">SMAN 3 Binjai</td>
+                                    <td class="px-6 py-4 text-center">2021</td>
+                                    <td class="px-6 py-4 text-center">2025</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="px-6 py-4 font-semibold">Universitas Negeri Medan</td>
+                                    <td class="px-6 py-4 text-center">2025</td>
+                                    <td class="px-6 py-4 text-center">(belum lulus)</td>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section-padding bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">💡 Keahlian</h2>
+                <div class="w-20 h-1 bg-purple-500 mx-auto"></div>
+            </div>
+            <div class="max-w-6xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Hard Skills -->
+                    <div class="bg-white rounded-lg shadow-lg p-8 card-hover">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">
+                            <i class="fas fa-code text-blue-500 mr-2"></i>Hard Skills
+                        </h3>
+                        <div class="space-y-6">
+                            <div>
+                                <div class="flex justify-between mb-2">
+                                    <span class="font-semibold">IbisPaint X</span>
+                                    <span class="text-gray-600">95%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-3">
+                                    <div class="progress-bar bg-gradient-to-r from-pink-500 to-purple-500 h-3 rounded-full"
+                                        style="width: 95%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-2">
+                                    <span class="font-semibold">Canva</span>
+                                    <span class="text-gray-600">85%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-3">
+                                    <div class="progress-bar bg-gradient-to-r from-blue-500 to-cyan-500 h-3 rounded-full"
+                                        style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-2">
+                                    <span class="font-semibold">Microsoft Office</span>
+                                    <span class="text-gray-600">80%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-3">
+                                    <div class="progress-bar bg-gradient-to-r from-green-500 to-teal-500 h-3 rounded-full"
+                                        style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Soft Skills -->
+                    <div class="bg-white rounded-lg shadow-lg p-8 card-hover">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">
+                            <i class="fas fa-users text-green-500 mr-2"></i>Soft Skills
+                        </h3>
+                        <div class="space-y-6">
+                            <div>
+                                <div class="flex justify-between mb-2">
+                                    <span class="font-semibold">Adaptif</span>
+                                    <span class="text-gray-600">90%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-3">
+                                    <div class="progress-bar bg-gradient-to-r from-yellow-500 to-orange-500 h-3 rounded-full"
+                                        style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-2">
+                                    <span class="font-semibold">Tanggung Jawab</span>
+                                    <span class="text-gray-600">89%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-3">
+                                    <div class="progress-bar bg-gradient-to-r from-red-500 to-pink-500 h-3 rounded-full"
+                                        style="width: 89%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-2">
+                                    <span class="font-semibold">Disiplin</span>
+                                    <span class="text-gray-600">88%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-3">
+                                    <div class="progress-bar bg-gradient-to-r from-indigo-500 to-purple-500 h-3 rounded-full"
+                                        style="width: 88%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-padding bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">🧠 Karya</h2>
+                <div class="w-20 h-1 bg-purple-500 mx-auto"></div>
+            </div>
+            <div class="max-w-6xl mx-auto">
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
+                        <div class="project-image">
+                            <img src="Image\Karya pada tahun 2023 (1).png">
+                        </div>
+                        <div class="p-10">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Karya pada tahun 2023</h3>
+                            <p class="text-gray-600">Dibuat di App IbisPaint X. (Denji - Chainsaw Man)</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
+                        <div class="project-image">
+                            <img src="Image\Karya pada tahun 2023 (2).png">
+                        </div>
+                        <div class="p-10">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Karya pada tahun 2023</h3>
+                            <p class="text-gray-600">Dibuat di App IbisPaint X</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
+                        <div class="project-image">
+                            <img src="Image\Karya pada tahun 2020.png">
+                        </div>
+                        <div class="p-10">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Karya pada tahun 2020</h3>
+                            <p class="text-gray-600">Dibuat di App Paint pada komputer</p>
+                        </div>
+                    </div>
+                </div>
+            <div class="bg-white bg-opacity-20 rounded-lg p-6 inline-block">
+                <p class="text-2xl font-bold text-gray-800 mb-4">Untuk selengkapnya kalian bisa lihat di akun instagram:</p>
+                <a href="https://www.instagram.com/annisart.i?igsh=d3N2anBjYXFsczlm">@annisart.i</a> dan
+                <a href="https://www.instagram.com/kumo_shii?igsh=MWNvNWRpOXZ3dWkwZA==">@kumo_shii</a>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="section-padding bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">🏅 Sertifikat & Prestasi</h2>
+                <div class="w-20 h-1 bg-purple-500 mx-auto"></div>
+            </div>
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden p-8 card-hover">
+                    <div class="grid md:grid-cols-1 gap-8 items-center"
+                        <div class="certificate-image">
+                            <img src="Image\Sertifikat lomba desain poster 17 Agustus 2024.jpeg">
+                        </div>
+                        <div class="p-8 text-center">
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4">Sertifikat Lomba Desain Poster Antar Kelas</h3>
+                            <p class="text-gray-600 mb-2">17 Agustus 2024</p>
+                            <div class="inline-flex items-center bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full">
+                                <i class="fas fa-trophy mr-2"></i>
+                                <span class="font-semibold">Prestasi Desain</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding gradient-bg">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-white mb-4">📞 Kontak & Sosial Media</h2>
+                <div class="w-20 h-1 bg-white mx-auto"></div>
+            </div>
+            <div class="max-w-20xl mx-auto">
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-white bg-opacity-20 rounded-lg p-6 text-center text-white card-hover">
+                        <i class="fas fa-envelope text-4xl mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2">Email</h3>
+                        <p class="text-sm opacity-90">annisanurulhayati0703@gmail.com</p>
+                    </div>
+                    <div class="bg-white bg-opacity-20 rounded-lg p-6 text-center text-white card-hover">
+                        <i class="fab fa-instagram text-4xl mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2">Instagram</h3>
+                        <a href="https://www.instagram.com/nisak0u?igsh=NGtrMTNoeDRqZmNj">@nisak0u</a>
+                    </div>
+                    <div class="bg-white bg-opacity-20 rounded-lg p-6 text-center text-white card-hover">
+                        <i class="fab fa-whatsapp text-4xl mb-4"></i>
+                        <h3 class="text-xl font-bold mb-2">WhatsApp</h3>
+                        <p class="text-sm opacity-90">+62 838-7044-1573</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Annisa Nurul Hayati. Dibuat dengan ❤️</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+                // Close mobile menu if open
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Add fade-in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+    <script>(function () { function c() { var b = a.contentDocument || a.contentWindow.document; if (b) { var d = b.createElement('script'); d.innerHTML = "window.__CF$cv$params={r:'989ade8ac7b50fad',t:'MTc1OTY0NTgxNS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);"; b.getElementsByTagName('head')[0].appendChild(d) } } if (document.body) { var a = document.createElement('iframe'); a.height = 1; a.width = 1; a.style.position = 'absolute'; a.style.top = 0; a.style.left = 0; a.style.border = 'none'; a.style.visibility = 'hidden'; document.body.appendChild(a); if ('loading' !== document.readyState) c(); else if (window.addEventListener) document.addEventListener('DOMContentLoaded', c); else { var e = document.onreadystatechange || function () { }; document.onreadystatechange = function (b) { e(b); 'loading' !== document.readyState && (document.onreadystatechange = e, c()) } } } })();</script>
+</body>
+
+</html>
